@@ -32,7 +32,7 @@ header p {
     font-size: 0.9rem;
 }
 
-form {
+form-group {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Space between form elements */
