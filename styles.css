@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #e6e6fa; /* Light purple */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    margin-right: 20px; /* Space on the right side */
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
     color: #333;
 }
@@ -38,9 +39,10 @@ select {
     margin-top: 5px;
     font-size: 1em;
     width: 100%;
+    background-color: #ffcccb; /* Lighter pink for regular inputs */
 }
 
 input[disabled] {
-    background-color: #e0e0e0;
+    background-color: #ffe4e1; /* Light pink for disabled inputs */
     color: #666;
 }
