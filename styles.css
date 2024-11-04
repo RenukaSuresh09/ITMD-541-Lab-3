@@ -9,21 +9,25 @@ body {
 }
 
 .container {
-    background: #fff;
-    padding: 20px;
+    background: #ffffff;
+    padding: 30px; /* Increased padding for more spacing */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly more shadow for a defined look */
     max-width: 600px;
     width: 100%;
-    margin-right: 20px; /* Space on the right side */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between container sections */
 }
 
 h1, h2, h3 {
     text-align: center;
     color: #333;
+    margin-top: 0;
 }
 
 header p {
+    text-align: center;
     color: #666;
     font-size: 0.9rem;
 }
@@ -31,10 +35,13 @@ header p {
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Space between form elements */
 }
 
 label {
     margin-top: 10px;
+    font-weight: bold;
+    color: #333;
 }
 
 input[type="text"],
@@ -45,9 +52,24 @@ select {
     font-size: 1em;
     width: 100%;
     background-color: #ffcccb; /* Lighter pink for regular inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box;
 }
 
 input[disabled] {
     background-color: #ffe4e1; /* Light pink for disabled inputs */
     color: #666;
+}
+
+.currency-conversion {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Additional space above conversion box */
+    max-width: 300px; /* Limits width of currency conversion box */
+    align-self: flex-start; /* Align to the left of the container */
 }
