@@ -13,7 +13,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     margin-right: 20px; /* Space on the right side */
 }
@@ -21,6 +21,11 @@ body {
 h1, h2, h3 {
     text-align: center;
     color: #333;
+}
+
+header p {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 form {
