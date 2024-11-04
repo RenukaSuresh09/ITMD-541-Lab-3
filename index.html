@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <form id="tipForm">
+            <label for="billTotal">Bill Total ($)</label>
+            <input type="text" id="billTotal" name="billTotal" required>
+
+            <label for="tipSlider">Tip Percentage (%)</label>
+            <input type="range" id="tipSlider" name="tipSlider" min="0" max="100">
+            <input type="text" id="tipPercentage" name="tipPercentage" disabled>
+
+            <label for="tipAmount">Tip Amount</label>
+            <input type="text" id="tipAmount" disabled>
+
+            <label for="totalBill">Total Bill with Tip</label>
+            <input type="text" id="totalBill" disabled>
+
+            <!-- Extra Credit: Currency Conversion Dropdown -->
+            <label for="currency">Select Currency</label>
+            <select id="currency">
+                <option value="USD" data-rate="1">Dollar ($)</option>
+                <option value="INR" data-rate="84.07">Indian Rupees (₹)</option>
+                <option value="AED" data-rate="3.67">UAE Dirham (د.إ)</option>
+            </select>
+            <p>Conversion Rates: $1 = ₹84.07, $1 = د.إ3.67</p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
